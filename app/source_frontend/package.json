@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/lab": "^5.0.0-alpha.114",
+    "@mui/material": "^5.11.3",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "add": "^2.0.6",
+    "antd": "^5.1.2",
+    "antd-mobile": "^5.27.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.1",
+    "socket.io-client": "^4.5.4",
+    "sweetalert2": "^11.6.16",
+    "sweetalert2-react-content": "^5.0.7",
+    "tailwindcss": "^3.2.4",
+    "web-vitals": "^2.1.0",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "serve": "npx serve build -l 4000",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "start cmd /k yarn tailwind && yarn start",
+    "tailwind": "npx tailwindcss -i ./src/assets/css/source_tailwind.css -o ./src/assets/css/tailwind.css --watch",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

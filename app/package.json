@@ -1,0 +1,19 @@
+{
+  "name": "who_fast_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node index.js",
+    "start": "node index.js",
+    "dev": "nodemon --ignore ./data/ --exec node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "express-core": "^1.0.2",
+    "express-validate": "^0.0.8",
+    "nodemon": "^2.0.16",
+    "socket.io": "^4.5.1"
+  }
+}

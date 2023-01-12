@@ -1,0 +1,36 @@
+@import './reset.css';
+@import './tailwind.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+
+@keyframes animationText {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+* {
+    font-family: 'Prompt', sans-serif !important;
+}
+
+
+.font-prompt {
+    font-family: 'Prompt', sans-serif !important;
+}
+
+
+.adm-list-item-content {
+    border: none !important;
+}
+
+.animation-text {
+    animation: animationText 2s infinite;
+}
