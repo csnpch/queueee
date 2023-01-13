@@ -9,6 +9,7 @@ function DisplayQueue({ SocketIo }) {
   const listQueue = useSelector((state) => state.queue.listQueue)
   const [queueNow, setQueueNow] = useState(listQueue[currentIndexQueue] || '000')
   const [statusFullScreen, setStatusFullScreen] = useState(false)
+  const [lastWordVoice, setLastWordVoice] = useState('ค่ะ')
 
   const listPlaySound = []
   const playSound = async (messageSpeech, eventEndCancel = false) => {
@@ -16,8 +17,15 @@ function DisplayQueue({ SocketIo }) {
     objectVoice = objectVoice.filter(item => item.voiceURI === "Microsoft Premwadee Online (Natural) - Thai (Thailand)")[0]
 
     listPlaySound.push(new SpeechSynthesisUtterance());
-    listPlaySound[0].voice = objectVoice.lang === 'th-TH' ? objectVoice : null
-    listPlaySound[0].lang = 'th-TH';
+    try {
+      if (objectVoice) {
+        listPlaySound[0].voice = objectVoice.lang === 'th-TH' ? objectVoice : null
+        listPlaySound[0].lang = 'th-TH';
+      }
+      setLastWordVoice('ค่ะ')
+    } catch (err) {
+      setLastWordVoice('ครับ')
+    }
     listPlaySound[0].text = messageSpeech;
     window.screen.width > 800 && window.speechSynthesis.speak(listPlaySound[0]);
     listPlaySound[0].addEventListener('end', () => {
@@ -48,7 +56,7 @@ function DisplayQueue({ SocketIo }) {
     console.log('where service ----------- > ', whereService)
     console.log('status in playsound run queue', statusCallServiceWhere)
 
-    let msg = `ขอเชิญหมายเลข  ${await getQueueToVoiceThai(queue)}` + (statusCallServiceWhere && whereService ? `,ที่${whereService}ค่ะ` : 'ค่ะ')
+    let msg = `ขอเชิญหมายเลข  ${await getQueueToVoiceThai(queue)}` + (statusCallServiceWhere && whereService ? `,ที่${whereService}${lastWordVoice}` : `${lastWordVoice}`)
     console.log(msg)
     let msgSplit = msg.split(',')
     for (let i = 0; i < msgSplit.length; i++) {

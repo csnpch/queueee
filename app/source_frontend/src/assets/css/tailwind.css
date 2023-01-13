@@ -4,10 +4,6 @@
   position: fixed !important
 }
 
-.absolute {
-  position: absolute !important
-}
-
 .relative {
   position: relative !important
 }
@@ -22,14 +18,6 @@
 
 .-bottom-40 {
   bottom: -10rem !important
-}
-
-.bottom-6 {
-  bottom: 1.5rem !important
-}
-
-.right-6 {
-  right: 1.5rem !important
 }
 
 .mt-40 {
@@ -336,13 +324,13 @@
   font-size: 8rem !important
 }
 
-.text-xl {
-  font-size: 1.25rem !important;
+.text-lg {
+  font-size: 1.125rem !important;
   line-height: 1.75rem !important
 }
 
-.text-lg {
-  font-size: 1.125rem !important;
+.text-xl {
+  font-size: 1.25rem !important;
   line-height: 1.75rem !important
 }
 
@@ -454,10 +442,6 @@
 .filter {
   -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
           filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important
-}
-
-.duration-150 {
-  transition-duration: 150ms !important
 }
 
 .duration-300 {
@@ -591,11 +575,6 @@
   background-color: rgb(156 163 175 / var(--tw-bg-opacity)) !important
 }
 
-.hover\:text-yellow-400:hover {
-  --tw-text-opacity: 1 !important;
-  color: rgb(250 204 21 / var(--tw-text-opacity)) !important
-}
-
 .hover\:text-blue-700:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(29 78 216 / var(--tw-text-opacity)) !important
@@ -604,14 +583,6 @@
 .hover\:text-black:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important
-}
-
-.active\:bottom-7:active {
-  bottom: 1.75rem !important
-}
-
-.active\:right-7:active {
-  right: 1.75rem !important
 }
 
 .active\:bg-gray-200:active {
