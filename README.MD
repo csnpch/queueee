@@ -11,4 +11,4 @@ IF use > 1 machine in local network
 plz config your IP on computer local server to 192.168.1.99
 
 
-<img src="https://sv1.picz.in.th/images/2023/01/15/J8mHSS.png" alt="J8mHSS.png" border="0" />
+<img style="height: 400px;" src="https://sv1.picz.in.th/images/2023/01/15/J8mHSS.png" alt="J8mHSS.png" border="0" />
