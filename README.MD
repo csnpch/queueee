@@ -10,4 +10,5 @@ NOTE FOR DEV :
 IF use > 1 machine in local network 
 plz config your IP on computer local server to 192.168.1.99
 
-![alt text](https://www.picz.in.th/image/J8mHSS](https://sv1.picz.in.th/images/2023/01/15/J8mHSS.png)
+
+<img src="https://sv1.picz.in.th/images/2023/01/15/J8mHSS.png" alt="J8mHSS.png" border="0" />
