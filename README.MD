@@ -9,3 +9,5 @@ Charitable project for government agencies, Department of Lands, Prachinburi Pro
 NOTE FOR DEV :
 IF use > 1 machine in local network 
 plz config your IP on computer local server to 192.168.1.99
+
+![alt text](https://www.picz.in.th/image/J8mHSS)
