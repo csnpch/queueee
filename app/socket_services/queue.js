@@ -43,7 +43,7 @@ const writeJSON_toFile = async (pathFile, dataJSON, checkIfDataAlready = false )
     await process()
   }
 
-  console.log(`--------------------------- Event time : ${datenow.getHours().toString().length < 2 ? '0' + datenow.getHours() : datenow.getHours()}:${datenow.getMinutes()}`)
+  // console.log(`--------------------------- Event time : ${datenow.getHours().toString().length < 2 ? '0' + datenow.getHours() : datenow.getHours()}:${datenow.getMinutes()}`)
 
 }
 
@@ -68,7 +68,7 @@ const readFile_toJSON = async (pathFile) => {
 const getLocalDataToVariable = async () => {
   
   let dataQueueFromFile = await readFile_toJSON(pathFileQueueJSON)
-  console.log(dataQueueFromFile)
+  // console.log(dataQueueFromFile)
 
   listQueue = dataQueueFromFile.listQueue
   letterQueue = dataQueueFromFile.letterQueue

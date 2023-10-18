@@ -23,10 +23,10 @@ const SocketIo = io(config.urlBackend)
 
 
 const playSound = (messageSpeech) => {
-  var speechSynthesis = new SpeechSynthesisUtterance();
-  speechSynthesis.lang = 'th-TH';
-  speechSynthesis.text = messageSpeech;
-  window.screen.width > 1800 && window.speechSynthesis.speak(speechSynthesis);
+  var speechSynthesis = new SpeechSynthesisUtterance()
+  speechSynthesis.lang = 'th-TH'
+  speechSynthesis.text = messageSpeech
+  window.speechSynthesis.speak(speechSynthesis)
 }
 
 
